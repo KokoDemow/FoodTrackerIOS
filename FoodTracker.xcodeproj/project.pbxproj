@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25EF0553257815E900895C25 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EF0552257815E900895C25 /* RatingControl.swift */; };
 		25FB113A25771E4700F99960 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FB113925771E4700F99960 /* AppDelegate.swift */; };
 		25FB113C25771E4700F99960 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FB113B25771E4700F99960 /* SceneDelegate.swift */; };
 		25FB113E25771E4700F99960 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FB113D25771E4700F99960 /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25EF0552257815E900895C25 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		25FB113625771E4700F99960 /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25FB113925771E4700F99960 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25FB113B25771E4700F99960 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				25FB113925771E4700F99960 /* AppDelegate.swift */,
 				25FB113B25771E4700F99960 /* SceneDelegate.swift */,
 				25FB113D25771E4700F99960 /* ViewController.swift */,
+				25EF0552257815E900895C25 /* RatingControl.swift */,
 				25FB113F25771E4700F99960 /* Main.storyboard */,
 				25FB114225771E4A00F99960 /* Assets.xcassets */,
 				25FB114425771E4A00F99960 /* LaunchScreen.storyboard */,
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25EF0553257815E900895C25 /* RatingControl.swift in Sources */,
 				25FB113E25771E4700F99960 /* ViewController.swift in Sources */,
 				25FB113A25771E4700F99960 /* AppDelegate.swift in Sources */,
 				25FB113C25771E4700F99960 /* SceneDelegate.swift in Sources */,
