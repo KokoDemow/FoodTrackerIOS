@@ -43,15 +43,15 @@
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottomMargin" secondItem="qWm-Wg-j7K" secondAttribute="bottom" constant="-5" id="0ia-e3-i4F"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="qWm-Wg-j7K" secondAttribute="bottom" constant="-5" id="3C3-An-MNp"/>
                                         <constraint firstItem="eZk-OF-8gz" firstAttribute="centerY" secondItem="XFe-EW-jHC" secondAttribute="centerY" id="49s-eV-Wcn"/>
+                                        <constraint firstItem="qWm-Wg-j7K" firstAttribute="leading" secondItem="vc0-Bg-1Z2" secondAttribute="leading" id="4k2-Dv-Dyl"/>
                                         <constraint firstItem="vc0-Bg-1Z2" firstAttribute="trailing" secondItem="XFe-EW-jHC" secondAttribute="trailingMargin" id="8VU-DL-hyW"/>
+                                        <constraint firstItem="qWm-Wg-j7K" firstAttribute="top" secondItem="vc0-Bg-1Z2" secondAttribute="bottom" constant="2" id="D36-CF-Vi5"/>
                                         <constraint firstItem="eZk-OF-8gz" firstAttribute="top" secondItem="XFe-EW-jHC" secondAttribute="topMargin" constant="-11" id="Hvb-f5-dYh"/>
                                         <constraint firstItem="vc0-Bg-1Z2" firstAttribute="leading" secondItem="eZk-OF-8gz" secondAttribute="trailing" constant="8" id="Ksx-uR-Zyl"/>
                                         <constraint firstItem="vc0-Bg-1Z2" firstAttribute="top" secondItem="XFe-EW-jHC" secondAttribute="topMargin" id="VeS-Nn-6TY"/>
                                         <constraint firstItem="eZk-OF-8gz" firstAttribute="leading" secondItem="XFe-EW-jHC" secondAttribute="leadingMargin" constant="-16" id="fq2-BU-eAj"/>
-                                        <constraint firstItem="qWm-Wg-j7K" firstAttribute="leading" secondItem="vc0-Bg-1Z2" secondAttribute="leading" id="ggX-4e-g3G"/>
-                                        <constraint firstItem="qWm-Wg-j7K" firstAttribute="top" secondItem="vc0-Bg-1Z2" secondAttribute="bottom" constant="2" id="slv-eA-8y1"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -123,16 +123,26 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title=" New Meal " id="mNY-py-S15">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="k0K-Fs-nQ0"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="UpK-fq-wLI"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="fo4-wi-TRO">
+                            <connections>
+                                <action selector="cancel:" destination="BYZ-38-t0r" id="TJn-SO-KO7"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="UpK-fq-wLI">
+                            <connections>
+                                <segue destination="tYC-fQ-pPr" kind="unwind" unwindAction="unwindToMealListWithSender:" id="P5Y-LL-hbB"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="nameTextField" destination="1Xg-v4-5qi" id="e7v-Fw-7TY"/>
                         <outlet property="photoImageView" destination="t1n-YG-bEN" id="fYM-KZ-8PP"/>
                         <outlet property="ratingControl" destination="UNR-2W-MDq" id="h19-jU-4sv"/>
+                        <outlet property="saveButton" destination="UpK-fq-wLI" id="EQL-Q5-8SE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="tYC-fQ-pPr" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="C3f-tX-YkL">
                     <connections>
                         <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="4yk-Zc-E9N"/>
